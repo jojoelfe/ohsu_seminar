@@ -23,9 +23,9 @@ drawings:
 css: unocss
 ---
 
-# Finding the needle in the haystack
+# From the rare mechanosensory transduction complex to the abundant ribosome
 
-## Detecting molecules in Cryo-EM images of cells
+## Cryo-EM imaging of biomolecular complexes in their native environment
 
 ### Johannes Elferich
 
