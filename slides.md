@@ -29,40 +29,49 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 
 # Why Cryo-EM?
 
+::left::
+
 - Electrons can be accelerated to hundreds of keV, wavelength that are much
   smaller than atomic radii
 
-- We can produce highly coherent electron beams and stable and tunable lenses
-  for electrons exists
+- Electrons can be manipulated using electric and magnetic fields, making 
 
-Video of gold atoms
+::right::
 
-# But...
+![Gold atom](gold_on_graphene.png)
 
-- Vitrification perfectly preserves the interior of cells
+<p style="text-align: center">Single gold atom at the edge of a graphene sheet [Wang et.al., Nanoscale 2012]</p>
 
-- But:
+---
+
+::left::
+
+![Goodsell](goodsell.jpg)
+
+<p style="text-align: center">Illustration by David S. Goodsell</p>
+
+::right::
+
+![Real EM](trueem.png)
 
 - High energy electrons rapidly damage biological samples => Noisy images
 
 - Biomolecules have very little contrast comparent to solvent
 
----
+- No 3D, just a projection
 
-# So we don't see this, but this:
-
-Question?
-
-Another
+- Small field of view
 
 
 ---
 
-# Today: Two strategies to find molecules in these images
+# How single-particle cryo-EM overcomes these challenges
 
-- Tomography with AuNP
+::left::
 
-- 2DTM on entire cell sections
+### A projection is a slice in Fourier space
+
+![video](single_particle.mp4)
 
 ---
 

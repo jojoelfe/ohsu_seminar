@@ -1,0 +1,1 @@
+for a in {1..1000}; do convert -gravity center frame$(printf "%04d\n" $a).png \( 0001.png -rotate $( printf '%s\n' $(echo "scale=8; $RANDOM/91" | bc ) ) \) -compose multiply -layers flatten frame$( printf "%04d\n" $(( $a + 1 )) ).png; done
