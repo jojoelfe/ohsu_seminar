@@ -71,8 +71,9 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 
 ### A projection is a slice in Fourier space
 
-![video](single_particle.mp4)
-
+<video muted id="myVideo2" class="w-auto h-200px m-auto">
+  <source src="/single_particle.mp4" type="video/mp4">
+</video>
 ---
 
 # Hearing background
