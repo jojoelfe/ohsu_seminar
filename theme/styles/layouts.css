@@ -3,9 +3,7 @@
 }
 
 .slidev-layout {
-  h1 {
-    color: var(--slidev-theme-primary);
-  }
+  @apply px-7 py-5
 
   h1 + p {
     @apply -mt-2 mb-4;
