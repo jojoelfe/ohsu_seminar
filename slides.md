@@ -86,7 +86,6 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 
 
 <div class="flex">
-<img src="/Electron_Tomography.tif.jpg" class="w-auto h-430px"/>
 <video controls muted loop id="myVideo2" class="w-auto h-430px">
   <source src="/tomo_ex.mp4" type="video/mp4">
 </video>
