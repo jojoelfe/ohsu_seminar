@@ -69,11 +69,17 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 
 ::left::
 
-### A projection is a slice in Fourier space
+<p class="text-center">Real space</p>
 
-<video muted id="myVideo2" class="w-auto h-200px m-auto">
-  <source src="/single_particle.mp4" type="video/mp4">
-</video>
+![Real Ribo](ribo_real_space.png)
+
+::right::
+
+<p class="text-center">Fourier space</p>
+
+![Filled Fourier](filled_fourier_space.png)
+
+
 ---
 
 # Hearing background
@@ -205,8 +211,24 @@ layout: cover
 # Why and how DeCo-LACE
 
 ---
+clicks: 5
+---
 
-# It works
+<h1 class="text-white">DeCo-LACE data</h1>
+<img class="abs-bl w-full -z-1" src="assembly1.png" />
+<img class="abs-bl w-full -z-1" src="assembly_bad.png" v-click/>
+<img class="abs-bl w-full -z-1" src="assembly2.png" v-click/>
+<img class="abs-bl w-full -z-1" src="assembly3.png" v-click/>
+<img class="abs-bl w-full -z-1" src="assembly4.png" v-click/>
+
+<Video v-if="$slidev.nav.clicks === 5" ></Video>
+
+
+
+
+
+---
+
 
 ---
 

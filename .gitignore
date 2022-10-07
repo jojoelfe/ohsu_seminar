@@ -6,3 +6,6 @@ index.html
 .remote-assets
 components.d.ts
 *.blend1
+*.tif
+*.mrc
+**/temp/*
