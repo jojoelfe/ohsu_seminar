@@ -71,14 +71,18 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 
 <p class="text-center">Real space</p>
 
-![Real Ribo](ribo_real_space.png)
+<img src="/ribo_real_space.png" class="h-200px mx-auto mt--10px"/>
+
+<img src="/projection1.png" class="h-180px mx-auto mt--10px"/>
+
 
 ::right::
 
 <p class="text-center">Fourier space</p>
 
-![Filled Fourier](filled_fourier_space.png)
+<img src="/filled_fourier_space.png" class="h-200px mx-auto mt--10px"/>
 
+<img src="/first_slice.png" class="h-200px mx-auto mt--10px"/>
 
 ---
 
@@ -161,22 +165,18 @@ p {
 </div>
 
 ---
-layout: cover
+Id: custom
 ---
 
 
 
-<video autoplay muted loop id="myVideo" class="abs-bl w-full -z-1" >
-  <source src="/labeled_movie.mp4" type="video/mp4">
-</video>
+<Video src="/labeled_movie.mp4" loop autoplay>
+</Video>
+
 
 <div class="bg-gray-500/50 -ml-0.5rem pl-0.5rem  -mt-0.5rem rounded-1xl" style="display:table">
 <h1 class="text-white m-0.5rem mb-0.5rem -ml-1rem">Detection in-situ</h1>
 </div>
-
-
-
----
 
 ---
 
@@ -206,6 +206,8 @@ layout: cover
 
 # Inital matching
 
+
+
 ---
 
 # Why and how DeCo-LACE
@@ -215,13 +217,13 @@ clicks: 5
 ---
 
 <h1 class="text-white">DeCo-LACE data</h1>
-<img class="abs-bl w-full -z-1" src="assembly1.png" />
-<img class="abs-bl w-full -z-1" src="assembly_bad.png" v-click/>
-<img class="abs-bl w-full -z-1" src="assembly2.png" v-click/>
-<img class="abs-bl w-full -z-1" src="assembly3.png" v-click/>
-<img class="abs-bl w-full -z-1" src="assembly4.png" v-click/>
+<img class="abs-bl w-full -z-1" src="/assembly1.png" />
+<img class="abs-bl w-full -z-1" src="/assembly_bad.png" v-click/>
+<img class="abs-bl w-full -z-1" src="/assembly2.png" v-click/>
+<img class="abs-bl w-full -z-1" src="/assembly3.png" v-click/>
+<img class="abs-bl w-full -z-1" src="/assembly4.png" v-click/>
 
-<Video v-if="$slidev.nav.clicks === 5" ></Video>
+<Video src="/assembly.webm" v-if="$slidev.nav.clicks === 5" ></Video>
 
 
 
