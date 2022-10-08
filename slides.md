@@ -180,15 +180,49 @@ Id: custom
 
 ---
 
-# Statisics
+# Two AuNP labels consistent with Pcdh15 dimers
+
+<img src="/dimer.png" />
+
+---
+
+# One AuNP label - monomer? 
+
+<img src="/quant.png" class="mt-75px"/>
+
+---
+
+# Pcdh15 numbers at the tip
+
+<img src="/stoi.png" class="h-430px w-auto m-auto"/>
 
 ---
 
 # Cool example
 
+<div class="abs-bl w-full h-full">
+
+<img src="/Figure_6.png" class="h-551px ml-100px" />
+
+</div>
+
 ---
 
 # Summary
+
+<ul>
+<li>Immuno-AuNPs allow cryo-EM imaging of rare protein complexes
+<ul>
+<li>Location</li>
+<li>Numbers</li>
+<li>Conformation</li>
+<li>Structure?</li>
+</ul>
+</li>
+
+<li v-click>Tip-links might occur with more than one copy at the tip, similar to channels</li>
+<li v-click>Pcdh15 and potentially Cdh23 have predetermined bending points to adopt geometries required for trafficking</li>
+</ul>
 
 ---
 
@@ -206,7 +240,7 @@ Id: custom
 
 # Inital matching
 
-
+<img src="/initmatching.png" />
 
 ---
 
