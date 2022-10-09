@@ -270,9 +270,17 @@ clicks: 5
 
 # Matches
 
+
+
+---
+clicks: 2
 ---
 
 # Tour through lamella
+
+
+<Video src="/movie2.mp4" v-if="$slidev.nav.clicks === 2" class="h-100%"></Video>
+
 
 ---
 
