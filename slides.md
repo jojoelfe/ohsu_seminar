@@ -96,8 +96,8 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 
 
 <div class="flex">
-<video controls muted loop id="myVideo2" class="w-auto h-430px">
-  <source src="/tomo_ex.mp4" type="video/mp4">
+<video muted loop id="myVideo2" class="w-auto h-430px">
+  <source src="/tomo_ex.mp4#t=0.6" type="video/mp4">
 </video>
 <div class="grid grid-cols-2 ml-30px gap-y-0 gap-x-5px">
 <div>
@@ -170,7 +170,7 @@ Id: custom
 
 
 
-<Video src="/labeled_movie.mp4" loop autoplay>
+<Video src="/labeled_movie.mp4" loop autoplay class="z--1">
 </Video>
 
 
@@ -229,8 +229,35 @@ Id: custom
 # Ribosompathy background and ER-HoxB8
 
 ---
-
+layout: video
+background: '#000000'
+clicks: 2
+---
 # 2DTM background
+
+<Video src="/2dtm.mp4" class="h-full" :from="from" :to="to"></Video>
+
+<script setup>
+  import { onMounted , getCurrentInstance, ref, watch } from 'vue'
+  import { inject } from 'vue'
+  import { injectionRoute } from '@slidev/client/constants'
+  // Run when slide mounted
+  const route = inject(injectionRoute)
+  const from = ref(-1)
+  const to = ref(-1)
+  // Watch for changes in $slidev.nav.clicks
+  watch(() => $slidev.nav.clicks, (val) => {
+    if (route.name !== $slidev.nav.route.name) return
+    if (val === 0) {
+      from.value = -1
+      to.value = -1
+    } else if (val === 1) {
+      from.value = 0
+      to.value = 300
+      }
+      })
+ 
+</script>
 
 ---
 
@@ -257,11 +284,7 @@ clicks: 5
 <img class="abs-bl w-full -z-1" src="/assembly3.png" v-click/>
 <img class="abs-bl w-full -z-1" src="/assembly4.png" v-click/>
 
-<Video src="/assembly.webm" v-if="$slidev.nav.clicks === 5" ></Video>
-
-
-
-
+<Video src="/assembly.webm" v-if="$slidev.nav.clicks === 5" autoplay class="-z-1" ></Video>
 
 ---
 
@@ -273,13 +296,52 @@ clicks: 5
 
 
 ---
-clicks: 2
+clicks: 15
+layout: video
+background: '#000000'
+
 ---
 
-# Tour through lamella
+
+<Video src="/movie2.mp4" class="h-full" :from="from" :to="to"></Video>
+
+<script setup>
+  import { onMounted , getCurrentInstance, ref, watch } from 'vue'
+  import { inject } from 'vue'
+  import { injectionRoute } from '@slidev/client/constants'
+  // Run when slide mounted
+  const route = inject(injectionRoute)
+  const from = ref(-1)
+  const to = ref(-1)
+  onMounted(() => {
+     console.log(route)
+     console.log($slidev.nav.route)
+  })
+  // Watch for changes in $slidev.nav.clicks
+  watch(() => $slidev.nav.clicks, (val) => {
+    if (route.name !== $slidev.nav.route.name) return
+    if (val === 0) {
+      from.value = -1
+      to.value = -1
+    } else if (val === 1) {
+      from.value = 0
+      to.value = 9.54
+    } else if (val === 2) {
+      from.value = 9.6
+      to.value = 18.0
+    } else if (val === 3) {
+      from.value = 20.0
+      to.value = 24.0
+    } else if (val === 4) {
+      from.value = 24.0
+      to.value = 50
+    }
+  })
+  
 
 
-<Video src="/movie2.mp4" v-if="$slidev.nav.clicks === 2" class="h-100%"></Video>
+
+</script>
 
 
 ---

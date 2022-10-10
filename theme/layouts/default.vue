@@ -1,12 +1,15 @@
 <script setup lang="ts">
     import PageNumber from "../components/PageNumber.vue";
     
+    
     const props = defineProps({
       class: {
         type: String,
-      },
+      }
+      
     })
-    </script>
+
+</script>
     
     <template>
       <div class="slidev-layout default col-grid">

@@ -42,6 +42,10 @@
   }
 }
 
+.slidev-layout.video{
+  @apply h-full grid;
+}
+
 .slidev-layout.cover,
 .slidev-layout.intro {
   @apply h-full grid;
