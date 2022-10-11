@@ -228,6 +228,17 @@ Id: custom
 
 # Ribosompathy background and ER-HoxB8
 
+::left::
+
+
+::right::
+
+![Ribosomopathy](ruggero_blood_2014.jpg)
+
+<p class="cite">[Ruggero and Shimamura, Marrow failure: a window into ribosome biology,  Blood, 2014]</p>
+
+
+
 ---
 layout: video
 background: '#000000'
