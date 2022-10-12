@@ -114,13 +114,13 @@ clicks: 5
 
 # Proteins of mechanotransduction
 
-::left::
-
-<img src="/fettiplace.jpg" class="h-400px mx-auto"/>
-
+<div class="flex">
+<img src="/fettiplace.jpg" class="h-300px mx-auto"/>
+<img src="/pcdh15.png" class="h-300px mx-auto"/>
+<img src="/tmc.png" class="h-150px mx-auto mt-150px"/>
+</div>
 <p class="cite">[Fettiplace, Is TMC1 the Hair Cell Mechanotransducer Channel? Biophysical Journal, 2016]</p>
 
-:: right::
 
 
 
@@ -208,10 +208,7 @@ p {
 
 <div class="grid grid-cols-3 gap-x-20px justify-items-center mt-50px" >
 <img src="/azubel.jpg" />
-<div v-click>
-<h3 class="text-center ml-110px">39G7</h3>
-<img src="/trunc.png" class="ml-50px"/>
-</div>
+
 <img v-click src="/graphannot.png" class="ml--70px"/>
 
 </div>
@@ -283,7 +280,7 @@ Id: custom
 
 ---
 
-# Ribosompathy background and ER-HoxB8
+# Hematopoiesis and Ribosompathies
 
 ::left::
 
@@ -294,6 +291,12 @@ Id: custom
 
 <p class="cite">[Ruggero and Shimamura, Marrow failure: a window into ribosome biology,  Blood, 2014]</p>
 
+---
+# Ribosomopathies hypotheses
+
+---
+
+# ER-HoxB8 cells
 
 
 ---
@@ -382,9 +385,15 @@ clicks: 2
 <img src="/initmatching.png" />
 
 ---
+clicks: 3
+---
 
 # Why and how DeCo-LACE
 
+<img src="/classic2.png" class="h-400px mx-auto " v-after v-if="$slidev.nav.clicks<1"/>
+<img src="/classic1.png" class="h-400px mx-auto " v-if="$slidev.nav.clicks===1" />
+<img src="/classic3.png" class="h-400px mx-auto " v-if="$slidev.nav.clicks===2" />
+<img src="/decolace.png" class="h-400px mx-auto " v-if="$slidev.nav.clicks===3" />
 ---
 clicks: 5
 ---
@@ -458,23 +467,30 @@ background: '#000000'
 
 ---
 
-# Reconstruction
+# What can we do? - Count
+
+
+---
+# What can we do? - Measure rotations
 
 ---
 
-# Rotational analysis
+# What can we do? - Reconstruct and classify
 
 ---
 
 # Summary
 
----
-
-# Whats next - DeCo-LACE tomography
 
 ---
 
-# The software
+# Future plans
+
+- Ribosomopathies
+
+- Hematopoietic stem cells mobilization
+
+- Metastasis
 
 ---
 

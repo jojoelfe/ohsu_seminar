@@ -8,8 +8,8 @@
    version="1.1"
    id="svg5"
    inkscape:export-filename="/groups/elferich/Documents/ohsu_seminar/blender/real_space.png"
-   inkscape:export-xdpi="300"
-   inkscape:export-ydpi="300"
+   inkscape:export-xdpi="72"
+   inkscape:export-ydpi="72"
    inkscape:version="1.1.1 (3bf5ae0, 2021-09-20)"
    sodipodi:docname="real_space.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -34,7 +34,7 @@
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:snap-bbox-midpoints="true"
      inkscape:zoom="0.41053452"
-     inkscape:cx="779.47161"
+     inkscape:cx="780.68953"
      inkscape:cy="1148.5027"
      inkscape:window-width="1848"
      inkscape:window-height="1016"
@@ -86,7 +86,7 @@
          y="21.642395">Z</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.40017772;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.400178;stroke:none;stroke-width:0.264583"
        x="-64.545609"
        y="174.22017"
        id="text5201-7-7"
