@@ -123,6 +123,7 @@ clicks: 5
 :: right::
 
 
+
 ---
 clicks: 4
 ---
@@ -179,7 +180,6 @@ p {
 </style>
 
 ---
-
 
 # Filaments are PCDH15
 
@@ -267,17 +267,18 @@ Id: custom
 # Summary
 
 <ul>
-<li>Immuno-AuNPs allow cryo-EM imaging of rare protein complexes
+<li>Immuno-AuNPs detection of rare protein complexes in cryo-EM tomograms
 <ul>
 <li>Location</li>
 <li>Numbers</li>
 <li>Conformation</li>
 <li>Structure?</li>
+<li>But: For know only extracellular</li>
 </ul>
 </li>
 
 <li v-click>Tip-links might occur with more than one copy at the tip, similar to channels</li>
-<li v-click>Pcdh15 and potentially Cdh23 have predetermined bending points to adopt geometries required for trafficking</li>
+<li v-click>Pcdh15 has a predetermined bending point to adopt to geometry required for trafficking</li>
 </ul>
 
 ---
