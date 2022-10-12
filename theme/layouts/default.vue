@@ -5,14 +5,17 @@
     const props = defineProps({
       class: {
         type: String,
-      }
+      },
+      container_class: {
+        type: String,
+      },
       
     })
 
 </script>
     
     <template>
-      <div class="slidev-layout default col-grid">
+      <div class="slidev-layout default col-grid" :class="props.container_class">
         <div class="top" :class="props.class">
           <slot/>
         </div>

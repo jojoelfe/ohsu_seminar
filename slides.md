@@ -64,25 +64,45 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 
 
 ---
-
+clicks: 5
+---
 # How single-particle cryo-EM overcomes these challenges
 
 ::left::
 
 <p class="text-center">Real space</p>
 
-<img src="/ribo_real_space.png" class="h-200px mx-auto mt--10px"/>
+<arrow x1="380" y1="200" x2="580" y2="200" color="green" width="3" />
+<arrow x1="580" y1="240" x2="380" y2="240" color="green" width="3" />
 
-<img src="/projection1.png" class="h-180px mx-auto mt--10px"/>
 
+
+<img src="/ribo_real_space.png" class="h-200px mx-auto mt--20px" v-if="$slidev.nav.clicks<2"/>
+<img src="/ribo_real_space2.png" class="h-200px mx-auto mt--20px" v-if="$slidev.nav.clicks===2"/>
+<img src="/ribo_real_space3.png" class="h-200px mx-auto mt--20px" v-if="$slidev.nav.clicks===3"/>
+<img src="/ribo_real_space4.png" class="h-200px mx-auto mt--20px" v-if="$slidev.nav.clicks===4"/>
+<Videoi src="/ribo_video.webm" class="h-200px mx-auto mt--20px" autoplay v-if="$slidev.nav.clicks===5"></Videoi>
+
+<img src="/projection1.png" class="h-150px mx-auto mt-10px" v-click v-if="$slidev.nav.clicks<2" />
+<img src="/projection2.png" class="h-150px mx-auto mt-10px" v-if="$slidev.nav.clicks===2"/>
+<img src="/projection3.png" class="h-150px mx-auto mt-10px" v-if="$slidev.nav.clicks===3"/>
+<img src="/projection4.png" class="h-150px mx-auto mt-10px" v-if="$slidev.nav.clicks===4"/>
+<Videoi src="/projection_video.webm" class="h-150px mx-auto mt-10px " autoplay v-if="$slidev.nav.clicks===5"></Videoi>
+
+<arrow x1="380" y1="400" x2="580" y2="400" color="green" width="3" v-after />
+<arrow x1="580" y1="440" x2="380" y2="440" color="green" width="3" v-after />
 
 ::right::
 
 <p class="text-center">Fourier space</p>
 
-<img src="/filled_fourier_space.png" class="h-200px mx-auto mt--10px"/>
+<img src="/filled_fourier_space.png" class="h-200px mx-auto mt--20px"/>
 
-<img src="/first_slice.png" class="h-200px mx-auto mt--10px"/>
+<img src="/first_slice.png" class="h-200px mx-auto " v-after v-if="$slidev.nav.clicks<2"/>
+<img src="/first_slice2.png" class="h-200px mx-auto " v-if="$slidev.nav.clicks===2" />
+<img src="/first_slice3.png" class="h-200px mx-auto " v-if="$slidev.nav.clicks===3" />
+<img src="/first_slice4.png" class="h-200px mx-auto " v-if="$slidev.nav.clicks===4" />
+<Videoi src="/slices_video.webm" class="h-200px mx-auto " autoplay v-if="$slidev.nav.clicks===5"></Videoi>
 
 ---
 
@@ -92,13 +112,49 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 
 ---
 
+# Proteins of mechanotransduction
+
+::left::
+
+<img src="/fettiplace.jpg" class="h-400px mx-auto"/>
+
+<p class="cite">[Fettiplace, Is TMC1 the Hair Cell Mechanotransducer Channel? Biophysical Journal, 2016]</p>
+
+:: right::
+
+
+---
+clicks: 4
+---
 # Tomography background
 
 
 <div class="flex">
-<video muted loop id="myVideo2" class="w-auto h-430px">
-  <source src="/tomo_ex.mp4#t=0.6" type="video/mp4">
-</video>
+<Videoi  loop class="w-auto h-430px" src="/tomo_ex.mp4#t=0.6" :from="from" :to="to"></Videoi>
+
+<script setup>
+  import { onMounted , getCurrentInstance, ref, watch } from 'vue'
+  import { inject } from 'vue'
+  import { injectionRoute } from '@slidev/client/constants'
+  // Run when slide mounted
+  const route = inject(injectionRoute)
+  const from = ref(0.6)
+  const to = ref(-1)
+  // Watch for changes in $slidev.nav.clicks
+  watch(() => $slidev.nav.clicks, (val) => {
+    if (route.name !== $slidev.nav.route.name) return
+    if (val === 0) {
+      from.value = 0.59
+      to.value = 0.6
+    } else if (val === 1) {
+      from.value = 0.6
+      to.value = 300
+      }
+      })
+</script>
+
+<img src="/fourier_tomo.png" class="h-250px" />
+
 <div class="grid grid-cols-2 ml-30px gap-y-0 gap-x-5px">
 <div>
 <p class="text-center mt-0 mb-0">XY</p>
@@ -271,8 +327,52 @@ clicks: 2
 </script>
 
 ---
+layout: video
+background: '#000000'
+clicks: 2
+---
+
+# Cutting windows into the cells
+
+<Video src="/milling.webm" class="h-full" :from="from" :to="to"></Video>
+
+<script setup>
+  import { onMounted , getCurrentInstance, ref, watch } from 'vue'
+  import { inject } from 'vue'
+  import { injectionRoute } from '@slidev/client/constants'
+  // Run when slide mounted
+  const route = inject(injectionRoute)
+  const from = ref(-1)
+  const to = ref(-1)
+  // Watch for changes in $slidev.nav.clicks
+  watch(() => $slidev.nav.clicks, (val) => {
+    if (route.name !== $slidev.nav.route.name) return
+    if (val === 0) {
+      from.value = -1
+      to.value = -1
+    } else if (val === 1) {
+      from.value = 3
+      to.value = 300
+      }
+      })
+ 
+</script>
+
+---
 
 # Lamella and what they look like
+
+::left::
+
+<p class="text-center">Undifferentiated</p>
+
+<img src="/undiff.png" class="h-400px mx-auto" />
+
+::right::
+
+<p class="text-center">Differentiated</p>
+
+<img src="/diff.png" class="h-400px mx-auto" />
 
 ---
 
