@@ -121,7 +121,15 @@ clicks: 5
 </div>
 <p class="cite">[Fettiplace, Is TMC1 the Hair Cell Mechanotransducer Channel? Biophysical Journal, 2016]</p>
 
+---
 
+# How to image stereocilia using cryo-EM
+
+<div class="flex mt-100px">
+<img src="/approach.png" class="h-280px w-auto"/>
+<img src="/mmm1.png" class="h-280px w-auto ml-50px"/>
+</div>
+<cite>Metlagel Z, Krey JF, Song J, Swift MF, Tivol WJ, Dumont RA, Thai J, Chang A, Seifikar H, Volkmann N, Hanein D, Barr-Gillespie PG, Auer M. Electron cryo-tomography of vestibular hair-cell stereocilia. J Struct Biol. 2019 May 1;206(2):149-155</cite>
 
 
 ---
@@ -284,30 +292,46 @@ Id: custom
 
 ::left::
 
+![Ribosomopathy](/Hematopoiesis.jpg)
 
 ::right::
 
-![Ribosomopathy](ruggero_blood_2014.jpg)
+<img src="/ruggero_blood_2014.jpg" v-click />
 
-<p class="cite">[Ruggero and Shimamura, Marrow failure: a window into ribosome biology,  Blood, 2014]</p>
+<p class="cite" v-after>[Ruggero and Shimamura, Marrow failure: a window into ribosome biology,  Blood, 2014]</p>
 
 ---
+
 # Ribosomopathies hypotheses
+
+<img src="/ribo_hypo.webp" class="mx-auto" />
 
 ---
 
 # ER-HoxB8 cells
+
+<img src="/erhox.png" class="mx-auto" />
 
 
 ---
 layout: video
 background: '#000000'
 clicks: 2
+class: text-white
 ---
 # 2DTM background
 
-<Video src="/2dtm.mp4" class="h-full" :from="from" :to="to"></Video>
+<Videoi src="/2dtm.mp4" class="h-400px mx-auto" :from="from" :to="to"></Videoi>
 
+
+<p class="text-xs">
+[Cryo-EM data collected by Johannes Elferich using Titan Krios microscope on Gatan K3 camera]
+</p>
+<p class="text-xs -mt-50px">
+
+[Background data collected by Nikolaus Grigorieff using Astro-Tech AT111EDT 111mm f/7 ED
+triplet apochromatic refractor on Canon Digital Rebel XSi camera]
+</p>
 <script setup>
   import { onMounted , getCurrentInstance, ref, watch } from 'vue'
   import { inject } from 'vue'
@@ -334,11 +358,12 @@ clicks: 2
 layout: video
 background: '#000000'
 clicks: 2
+class: text-white
 ---
 
-# Cutting windows into the cells
+# Cryo-FIB: Cutting windows into cells
 
-<Video src="/milling.webm" class="h-full" :from="from" :to="to"></Video>
+<Videoi src="/milling.webm" class="h-full z--1" :from="from" :to="to" ></Videoi>
 
 <script setup>
   import { onMounted , getCurrentInstance, ref, watch } from 'vue'
