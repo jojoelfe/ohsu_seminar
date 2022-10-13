@@ -1,0 +1,12 @@
+Input reconstruction:: /groups/elferich/mammalian_ribosome_structures/6swa_simulate_bfsca1_5.mrc
+Angles from input .star file?:: No
+Angular step for projection:: 15.0
+Output projection stack:: my_projection_stack.mrc
+Pixel size of reconstruction (A):: 3.0
+Mask radius (A):: 250
+Wanted SNR:: 1.0
+Padding factor:: 1.0
+Particle symmetry:: C1
+Apply mask:: No
+Add noise:: Yes
+Max. threads to use for calculation:: 4

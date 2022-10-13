@@ -27,14 +27,14 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 
 ---
 
-# Why Cryo-EM?
+# Why Cryo-TEM?
 
 ::left::
 
 - Electrons can be accelerated to hundreds of keV, wavelength that are much
-  smaller than atomic radii
+  smaller than atomic radii, thereby allowing high resolution
 
-- Electrons can be manipulated using electric and magnetic fields, making 
+- Electrons can be manipulated using electric and magnetic fields, making it possible to generate real-space images from diffraction
 
 ::right::
 
@@ -46,22 +46,25 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 
 ::left::
 
+# Expectiation
+
 ![Goodsell](goodsell.jpg)
 
 <p style="text-align: center">Illustration by David S. Goodsell</p>
 
 ::right::
+<div v-click>
+
+# Reality
 
 ![Real EM](trueem.png)
 
-- High energy electrons rapidly damage biological samples => Noisy images
-
-- Biomolecules have very little contrast comparent to solvent
+- High energy electrons rapidly damage biological samples and biomolecules have very little contrast 
 
 - No 3D, just a projection
 
 - Small field of view
-
+</div>
 
 ---
 clicks: 5
@@ -147,7 +150,7 @@ clicks: 4
   import { injectionRoute } from '@slidev/client/constants'
   // Run when slide mounted
   const route = inject(injectionRoute)
-  const from = ref(0.6)
+  const from = ref(0.59)
   const to = ref(-1)
   // Watch for changes in $slidev.nav.clicks
   watch(() => $slidev.nav.clicks, (val) => {
@@ -162,9 +165,9 @@ clicks: 4
       })
 </script>
 
-<img src="/fourier_tomo.png" class="h-250px" />
+<img src="/fourier_tomo.png" class="h-250px mt-100px" v-click="2"/>
 
-<div class="grid grid-cols-2 ml-30px gap-y-0 gap-x-5px">
+<div class="grid grid-cols-2 ml-30px gap-y-0 gap-x-5px" v-click="3">
 <div>
 <p class="text-center mt-0 mb-0">XY</p>
 <img src="/tomo_ex_xy.png" class="w-200px h-200px"/>
@@ -189,7 +192,7 @@ p {
 
 ---
 
-# Filaments are PCDH15
+# There are filaments on stereocilia
 
 <div class="flex">
 <img src="/isthispcdh15.png" class="w-auto h-400px mt-40px"/>
@@ -200,24 +203,24 @@ p {
 
 # Labeling with antibodies
 
-<div class="grid grid-cols-2 justify-items-center gap-y-25px">
-<img src="/poly.png" class="w-auto h-180px" />
+<div class="grid grid-cols-2 justify-items-center gap-y-25px mt-100px">
+<img src="/poly.png" class="w-auto h-180px " />
 <div class="flex">
 <img v-click src="/g26.png" class="w-auto h-180px" />
 <img v-after src="/g27.png" class="w-auto h-180px" />
 </div>
-<img v-click src="/slicer001.jpg" class="w-auto h-250px" />
-<img v-after src="/title.png" class="w-auto h-250px" />
+
 </div>
 
 ---
 
-# Labeling Pcdh15 with antibodies - Monoclonal
+# Labeling Pcdh15 with 39G7 AuNP 
 
 <div class="grid grid-cols-3 gap-x-20px justify-items-center mt-50px" >
 <img src="/azubel.jpg" />
 
-<img v-click src="/graphannot.png" class="ml--70px"/>
+<img v-click src="/graphannot.png" class="ml-70px"/>
+<img v-click src="/we.png" class="ml--50px h-300px"/>
 
 </div>
 
@@ -249,22 +252,39 @@ Id: custom
 
 # One AuNP label - monomer? 
 
+::left::
+<div>
+<img src="/mono1.png" class=""/>
+<img src="/mono2.png" class=""/>
+</div>
+::right::
 <img src="/quant.png" class="mt-75px"/>
 
 ---
 
 # Pcdh15 numbers at the tip
 
-<img src="/stoi.png" class="h-430px w-auto m-auto"/>
+::left::
+
+<img src="/numbers.png" class="mt-100px "/>
+
+
+::right::
+<img src="/stoi.png" v-click class="h-430px w-auto m-auto"/>
 
 ---
+clicks: 3
+---
 
-# Cool example
+<Video src="/movie3.mp4" class="h-full" v-if="$slidev.nav.clicks<2"></Video>
 
-<div class="abs-bl w-full h-full">
+<div class="flex">
+<div class="h-400px" v-if="$slidev.nav.clicks>1">
 
-<img src="/Figure_6.png" class="h-551px ml-100px" />
+<img src="/Figure_6.png" class="h-500px ml-0px" />
 
+</div>
+<Videoi src="/Video1.mp4" class="h-250px mt-130px ml-20px" v-if="$slidev.nav.clicks>2"></Videoi>
 </div>
 
 ---
@@ -307,19 +327,12 @@ Id: custom
 <img src="/ribo_hypo.webp" class="mx-auto" />
 
 ---
-
-# ER-HoxB8 cells
-
-<img src="/erhox.png" class="mx-auto" />
-
-
----
 layout: video
 background: '#000000'
 clicks: 2
 class: text-white
 ---
-# 2DTM background
+# 2D Template Matching
 
 <Videoi src="/2dtm.mp4" class="h-400px mx-auto" :from="from" :to="to"></Videoi>
 
@@ -355,12 +368,31 @@ triplet apochromatic refractor on Canon Digital Rebel XSi camera]
 </script>
 
 ---
+
+# 2DTM 
+
+
+<div class="flex">
+<img src="/2dtm_initial.jpg"  class="w-300px" />
+
+
+<img src="/2dtm_ribo.jpg" class="w-300px ml-20px" v-click/>
+</div>
+
+
+---
+
+# ER-HoxB8 cells
+
+<img src="/erhox.png" class="mx-auto" />
+
+
+---
 layout: video
 background: '#000000'
 clicks: 2
 class: text-white
 ---
-
 # Cryo-FIB: Cutting windows into cells
 
 <Videoi src="/milling.webm" class="h-full z--1" :from="from" :to="to" ></Videoi>
@@ -432,23 +464,22 @@ clicks: 5
 
 <Video src="/assembly.webm" v-if="$slidev.nav.clicks === 5" autoplay class="-z-1" ></Video>
 
----
-
 
 ---
 
-# Matches
+# Does DeCo-LACE provide high-resolution data
 
+<img src="/the_lamella.png" class="h-250px mx-auto" />
+
+<img src="/focus.png" class="h-190px mx-auto mt-10px" />
 
 
 ---
-clicks: 15
+clicks: 7
 layout: video
 background: '#000000'
 
 ---
-
-
 <Video src="/movie2.mp4" class="h-full" :from="from" :to="to"></Video>
 
 <script setup>
@@ -480,7 +511,16 @@ background: '#000000'
       to.value = 24.0
     } else if (val === 4) {
       from.value = 24.0
-      to.value = 50
+      to.value = 33
+    } else if (val === 5) {
+      from.value = 35.0
+      to.value = 39.0
+    } else if (val === 6) {
+      from.value = 39.0
+      to.value = 48.0
+    } else if (val === 7) {
+      from.value = 48.0
+      to.value = 54.0
     }
   })
   
@@ -494,14 +534,37 @@ background: '#000000'
 
 # What can we do? - Count
 
+<img src="/count.png" class="mx-auto" />
 
+---
+clicks: 2
 ---
 # What can we do? - Measure rotations
 
+::left::
+
+<img src="/greenup.png" class="w-200px mx-auto mt-20px"/>
+<img src="/ring.png" class="w-200px mx-auto mt-20px" />
+
+::right::
+
+<Videoi src="/movie5.mp4" autoplay v-if="$slidev.nav.clicks == 1"></Videoi>
+<Videoi src="/movie6.mp4" autoplay v-if="$slidev.nav.clicks == 2"></Videoi>
+
+---
+clicks: 2
 ---
 
 # What can we do? - Reconstruct and classify
 
+::left::
+
+<Videoi src="/rec1.mp4" autoplay v-if="$slidev.nav.clicks === 0"></Videoi>
+<Videoi src="/rec2.mp4" autoplay v-if="$slidev.nav.clicks === 1"></Videoi>
+<Videoi src="/rec2.mp4" v-if="$slidev.nav.clicks === 2"></Videoi>
+::right::
+
+<img src="class.png" class="mt-20px" v-if="$slidev.nav.clicks === 2"/>
 ---
 
 # Summary
