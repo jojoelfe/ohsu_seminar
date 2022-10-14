@@ -61,12 +61,22 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 
 # Proteins of mechanotransduction
 
-<div class="flex">
-<img src="/fettiplace.jpg" class="h-300px mx-auto"/>
-<img src="/pcdh15.png" class="h-300px mx-auto"/>
-<img src="/tmc.png" class="h-150px mx-auto mt-150px"/>
+<div class="flex mt-50px ml-50px">
+<div>
+<img src="/fettiplace.jpg" class="h-300px "/>
+<p class="cite w-260px">[Fettiplace, R. Biophysical Journal (2016)]</p>
 </div>
-<p class="cite">[Fettiplace, Is TMC1 the Hair Cell Mechanotransducer Channel? Biophysical Journal, 2016]</p>
+<div>
+<img src="/pcdh15.png" class="h-300px mx-auto"/>
+<p class="cite w-260px ml-20px">[Ge, J.*, Elferich, J.*, et.al. eLife 2018]</p>
+</div>
+<div>
+<img src="/tmc.png" class="h-150px mx-auto mt-150px"/>
+<p class="cite w-260px ml-20px">[Jeong, H.*, Clark, S.*, et.al. Nature 2022]</p>
+
+</div>
+</div>
+
 
 ---
 
@@ -76,13 +86,13 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 <img src="/approach.png" class="h-280px w-auto"/>
 <img src="/mmm1.png" class="h-280px w-auto ml-50px"/>
 </div>
-<cite>Metlagel Z, Krey JF, Song J, Swift MF, Tivol WJ, Dumont RA, Thai J, Chang A, Seifikar H, Volkmann N, Hanein D, Barr-Gillespie PG, Auer M. Electron cryo-tomography of vestibular hair-cell stereocilia. J Struct Biol. 2019 May 1;206(2):149-155</cite>
+<p class="cite">[Metlagel, Z., Krey, J., et.al.  J Struct Biol. 2019]</p>
 
 
 ---
 clicks: 4
 ---
-# Tomography background
+# Tomography of stereocilia
 
 
 <div class="flex">
@@ -145,19 +155,6 @@ p {
 
 ---
 
-# Labeling with antibodies
-
-<div class="grid grid-cols-2 justify-items-center gap-y-25px mt-100px">
-<img src="/poly.png" class="w-auto h-180px " />
-<div class="flex">
-<img v-click src="/g26.png" class="w-auto h-180px" />
-<img v-after src="/g27.png" class="w-auto h-180px" />
-</div>
-
-</div>
-
----
-
 # Labeling Pcdh15 with 39G7 AuNP 
 
 <div class="grid grid-cols-3 gap-x-20px justify-items-center mt-50px" >
@@ -169,7 +166,7 @@ p {
 </div>
 
 <div class="w-400px">
-<cite >Azubel, M., Carter, S. D., Weiszmann, J., Zhang, J., Jensen, G. J., Li, Y., & Kornberg, R. D. (2019). FGF21 trafficking in intact human cells revealed by cryo-electron tomography with gold nanoparticles. In eLife (Vol. 8).  </cite>
+<p class="cite" >[Azubel, M. eLife 2019]</p>
 </div>
 
 ---
@@ -190,8 +187,8 @@ Id: custom
 
 # Two AuNP labels consistent with Pcdh15 dimers
 
-<img src="/dimer.png" />
-
+<img src="/dimer.png" class="mx-auto h-430px" />
+<p class="cite" >[Elferich, J., et.al. eLife 2021]</p>
 ---
 
 # One AuNP label - monomer? 
@@ -203,6 +200,8 @@ Id: custom
 </div>
 ::right::
 <img src="/quant.png" class="mt-75px"/>
+::bottom::
+<p class="cite" >[Elferich, J., et.al. eLife 2021]</p>
 
 ---
 
@@ -215,11 +214,11 @@ Id: custom
 
 ::right::
 <img src="/stoi.png" v-click class="h-430px w-auto m-auto"/>
-
+::bottom::
+<p class="cite" >[Elferich, J., et.al. eLife 2021]</p>
 ---
 clicks: 3
 ---
-
 <Video src="/movie3.mp4" class="h-full" v-if="$slidev.nav.clicks<2"></Video>
 
 <div class="flex">
@@ -230,6 +229,8 @@ clicks: 3
 </div>
 <Videoi src="/Video1.mp4" class="h-250px mt-130px ml-20px" v-if="$slidev.nav.clicks>2"></Videoi>
 </div>
+
+
 
 ---
 
@@ -260,15 +261,16 @@ clicks: 3
 
 ::right::
 
-<img src="/ruggero_blood_2014.jpg" v-click />
+<img src="/ruggero_blood_2014.jpg" v-click class="mt-100px"/>
 
-<p class="cite" v-after>[Ruggero and Shimamura, Marrow failure: a window into ribosome biology,  Blood, 2014]</p>
+<p class="cite" v-after>[Ruggero, Shimamura,  Blood, 2014]</p>
 
 ---
 
 # Ribosomopathies hypotheses
 
-<img src="/ribo_hypo.webp" class="mx-auto" />
+<img src="/hyops.jpg" class="mx-auto mt-50px" />
+<p class="cite" v-after>[Gay, D. Trends in Biochemical Sciences, 2021]</p>
 
 ---
 layout: video
@@ -281,12 +283,12 @@ class: text-white
 <Videoi src="/2dtm.mp4" class="h-400px mx-auto" :from="from" :to="to"></Videoi>
 
 
-<p class="text-xs">
+<p class="cite">
 [Cryo-EM data collected by Johannes Elferich using Titan Krios microscope on Gatan K3 camera]
 </p>
-<p class="text-xs -mt-50px">
+<p class="cite">
 
-[Background data collected by Nikolaus Grigorieff using Astro-Tech AT111EDT 111mm f/7 ED
+[Background image of M31 collected by Nikolaus Grigorieff using Astro-Tech AT111EDT 111mm f/7 ED
 triplet apochromatic refractor on Canon Digital Rebel XSi camera]
 </p>
 <script setup>
@@ -313,24 +315,34 @@ triplet apochromatic refractor on Canon Digital Rebel XSi camera]
 
 ---
 
-# 2DTM 
+# 2D Template Matching
 
+::left::
+<img src="/2dtm_initial.jpg"  class="w-300px mx-auto" />
+<img src="/rick2.jpg"  class="w-300px mx-auto" />
+<p class="cite">[Rickgauer, P., et.al. eLife 2017]</p>
 
-<div class="flex">
-<img src="/2dtm_initial.jpg"  class="w-300px" />
+::right::
+<img src="/2dtm_ribo.jpg" class="w-300px ml-20px mx-auto mt-60px" v-click/>
+<p class="cite">[Lucas, B., Himes, B. et.al. eLife 2021]</p>
 
-
-<img src="/2dtm_ribo.jpg" class="w-300px ml-20px" v-click/>
-</div>
 
 
 ---
 
 # ER-HoxB8 cells
 
-<img src="/erhox.png" class="mx-auto" />
+<div class="flex">
+<img src="/erhox2.png" class="mx-auto h-300px" />
 
+<img src="/erhox.png" class="mx-auto h-150px" />
+</div>
 
+<p class="cite">Wang, G., et.al. Nature methods 2006</p>
+<p class="cite">Sykes, D., et.al. Cell 2016</p>
+
+Genetic maipulation with CRISPR can be used to introduce Ribosomopathy-like defects
+<p class="cite"></p>
 ---
 layout: video
 background: '#000000'
@@ -385,6 +397,9 @@ class: text-white
 
 <img src="/initmatching.png" />
 
+<p class="cite" >[Elferich, J., Schiroli, G., Scadden, D., Grigoriff, N. bioRxiv 2022]</p>
+
+
 ---
 clicks: 3
 ---
@@ -416,6 +431,7 @@ clicks: 5
 <img src="/the_lamella.png" class="h-250px mx-auto" />
 
 <img src="/focus.png" class="h-190px mx-auto mt-10px" />
+<p class="cite" >[Elferich, J., Schiroli, G., Scadden, D., Grigoriff, N. bioRxiv 2022]</p>
 
 
 ---
@@ -479,6 +495,7 @@ background: '#000000'
 # What can we do? - Count
 
 <img src="/count.png" class="mx-auto" />
+<p class="cite" >[Elferich, J., Schiroli, G., Scadden, D., Grigoriff, N. bioRxiv 2022]</p>
 
 ---
 clicks: 2
@@ -509,10 +526,7 @@ clicks: 2
 ::right::
 
 <img src="class.png" class="mt-20px" v-if="$slidev.nav.clicks === 2"/>
----
-
-# Summary
-
+<p class="cite">[Lucas, B. et.al. eLife 2022]</p>
 
 ---
 
@@ -520,7 +534,7 @@ clicks: 2
 
 - Ribosomopathies
 
-- Hematopoietic stem cells mobilization
+- Hematopoietic stem cell mobilization
 
 - Metastasis
 
