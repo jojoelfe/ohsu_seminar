@@ -27,23 +27,6 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 
 ---
 
-# Why Cryo-TEM?
-
-::left::
-
-- Electrons can be accelerated to hundreds of keV, wavelength that are much
-  smaller than atomic radii, thereby allowing high resolution
-
-- Electrons can be manipulated using electric and magnetic fields, making it possible to generate real-space images from diffraction
-
-::right::
-
-![Gold atom](gold_on_graphene.png)
-
-<p style="text-align: center">Single gold atom at the edge of a graphene sheet [Wang et.al., Nanoscale 2012]</p>
-
----
-
 ::left::
 
 # Expectiation
@@ -67,47 +50,8 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 </div>
 
 ---
-clicks: 5
----
-# How single-particle cryo-EM overcomes these challenges
-
-::left::
-
-<p class="text-center">Real space</p>
-
-<arrow x1="380" y1="200" x2="580" y2="200" color="green" width="3" />
-<arrow x1="580" y1="240" x2="380" y2="240" color="green" width="3" />
 
 
-
-<img src="/ribo_real_space.png" class="h-200px mx-auto mt--20px" v-if="$slidev.nav.clicks<2"/>
-<img src="/ribo_real_space2.png" class="h-200px mx-auto mt--20px" v-if="$slidev.nav.clicks===2"/>
-<img src="/ribo_real_space3.png" class="h-200px mx-auto mt--20px" v-if="$slidev.nav.clicks===3"/>
-<img src="/ribo_real_space4.png" class="h-200px mx-auto mt--20px" v-if="$slidev.nav.clicks===4"/>
-<Videoi src="/ribo_video.webm" class="h-200px mx-auto mt--20px" autoplay v-if="$slidev.nav.clicks===5"></Videoi>
-
-<img src="/projection1.png" class="h-150px mx-auto mt-10px" v-click v-if="$slidev.nav.clicks<2" />
-<img src="/projection2.png" class="h-150px mx-auto mt-10px" v-if="$slidev.nav.clicks===2"/>
-<img src="/projection3.png" class="h-150px mx-auto mt-10px" v-if="$slidev.nav.clicks===3"/>
-<img src="/projection4.png" class="h-150px mx-auto mt-10px" v-if="$slidev.nav.clicks===4"/>
-<Videoi src="/projection_video.webm" class="h-150px mx-auto mt-10px " autoplay v-if="$slidev.nav.clicks===5"></Videoi>
-
-<arrow x1="380" y1="400" x2="580" y2="400" color="green" width="3" v-after />
-<arrow x1="580" y1="440" x2="380" y2="440" color="green" width="3" v-after />
-
-::right::
-
-<p class="text-center">Fourier space</p>
-
-<img src="/filled_fourier_space.png" class="h-200px mx-auto mt--20px"/>
-
-<img src="/first_slice.png" class="h-200px mx-auto " v-after v-if="$slidev.nav.clicks<2"/>
-<img src="/first_slice2.png" class="h-200px mx-auto " v-if="$slidev.nav.clicks===2" />
-<img src="/first_slice3.png" class="h-200px mx-auto " v-if="$slidev.nav.clicks===3" />
-<img src="/first_slice4.png" class="h-200px mx-auto " v-if="$slidev.nav.clicks===4" />
-<Videoi src="/slices_video.webm" class="h-200px mx-auto " autoplay v-if="$slidev.nav.clicks===5"></Videoi>
-
----
 
 # Hearing background
 
@@ -583,3 +527,52 @@ clicks: 2
 ---
 
 # Acknowledgments
+
+
+---
+layout: section
+---
+
+# Extras
+
+---
+clicks: 5
+---
+
+# How single-particle cryo-EM overcomes these challenges
+
+::left::
+
+<p class="text-center">Real space</p>
+
+<arrow x1="380" y1="200" x2="580" y2="200" color="green" width="3" />
+<arrow x1="580" y1="240" x2="380" y2="240" color="green" width="3" />
+
+
+
+<img src="/ribo_real_space.png" class="h-200px mx-auto mt--20px" v-if="$slidev.nav.clicks<2"/>
+<img src="/ribo_real_space2.png" class="h-200px mx-auto mt--20px" v-if="$slidev.nav.clicks===2"/>
+<img src="/ribo_real_space3.png" class="h-200px mx-auto mt--20px" v-if="$slidev.nav.clicks===3"/>
+<img src="/ribo_real_space4.png" class="h-200px mx-auto mt--20px" v-if="$slidev.nav.clicks===4"/>
+<Videoi src="/ribo_video.webm" class="h-200px mx-auto mt--20px" autoplay v-if="$slidev.nav.clicks===5"></Videoi>
+
+<img src="/projection1.png" class="h-150px mx-auto mt-10px" v-click v-if="$slidev.nav.clicks<2" />
+<img src="/projection2.png" class="h-150px mx-auto mt-10px" v-if="$slidev.nav.clicks===2"/>
+<img src="/projection3.png" class="h-150px mx-auto mt-10px" v-if="$slidev.nav.clicks===3"/>
+<img src="/projection4.png" class="h-150px mx-auto mt-10px" v-if="$slidev.nav.clicks===4"/>
+<Videoi src="/projection_video.webm" class="h-150px mx-auto mt-10px " autoplay v-if="$slidev.nav.clicks===5"></Videoi>
+
+<arrow x1="380" y1="400" x2="580" y2="400" color="green" width="3" v-after />
+<arrow x1="580" y1="440" x2="380" y2="440" color="green" width="3" v-after />
+
+::right::
+
+<p class="text-center">Fourier space</p>
+
+<img src="/filled_fourier_space.png" class="h-200px mx-auto mt--20px"/>
+
+<img src="/first_slice.png" class="h-200px mx-auto " v-after v-if="$slidev.nav.clicks<2"/>
+<img src="/first_slice2.png" class="h-200px mx-auto " v-if="$slidev.nav.clicks===2" />
+<img src="/first_slice3.png" class="h-200px mx-auto " v-if="$slidev.nav.clicks===3" />
+<img src="/first_slice4.png" class="h-200px mx-auto " v-if="$slidev.nav.clicks===4" />
+<Videoi src="/slices_video.webm" class="h-200px mx-auto " autoplay v-if="$slidev.nav.clicks===5"></Videoi>
