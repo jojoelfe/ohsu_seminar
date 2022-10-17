@@ -29,7 +29,7 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 
 ::left::
 
-# Expectiation
+# Expectation
 
 ![Goodsell](goodsell.jpg)
 
@@ -66,11 +66,11 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 <img src="/fettiplace.jpg" class="h-300px "/>
 <p class="cite w-260px">[Fettiplace, R. Biophysical Journal (2016)]</p>
 </div>
-<div>
+<div v-click>
 <img src="/pcdh15.png" class="h-300px mx-auto"/>
 <p class="cite w-260px ml-20px">[Ge, J.*, Elferich, J.*, et.al. eLife 2018]</p>
 </div>
-<div>
+<div v-click>
 <img src="/tmc.png" class="h-150px mx-auto mt-150px"/>
 <p class="cite w-260px ml-20px">[Jeong, H.*, Clark, S.*, et.al. Nature 2022]</p>
 
@@ -237,19 +237,25 @@ clicks: 3
 # Summary
 
 <ul>
-<li>Immuno-AuNPs detection of rare protein complexes in cryo-EM tomograms
+<li>Immuno-AuNPs enable detection of rare protein complexes in cryo-EM tomograms
 <ul>
 <li>Location</li>
 <li>Numbers</li>
 <li>Conformation</li>
 <li>Structure?</li>
-<li>But: For know only extracellular</li>
+<li>But: For now only extracellular</li>
 </ul>
 </li>
 
 <li v-click>Tip-links might occur with more than one copy at the tip, similar to channels</li>
 <li v-click>Pcdh15 has a predetermined bending point to adopt to geometry required for trafficking</li>
 </ul>
+
+---
+layout: section
+---
+
+# Big transition
 
 ---
 
@@ -270,7 +276,7 @@ clicks: 3
 # Ribosomopathies hypotheses
 
 <img src="/hyops.jpg" class="mx-auto mt-50px" />
-<p class="cite" v-after>[Gay, D. Trends in Biochemical Sciences, 2021]</p>
+<p class="cite" v-after>[Gay, D., et.al. Trends in Biochemical Sciences, 2021]</p>
 
 ---
 layout: video
@@ -286,8 +292,7 @@ class: text-white
 <p class="cite">
 [Cryo-EM data collected by Johannes Elferich using Titan Krios microscope on Gatan K3 camera]
 </p>
-<p class="cite">
-
+<p class="cite mt--30px">
 [Background image of M31 collected by Nikolaus Grigorieff using Astro-Tech AT111EDT 111mm f/7 ED
 triplet apochromatic refractor on Canon Digital Rebel XSi camera]
 </p>
@@ -324,7 +329,7 @@ triplet apochromatic refractor on Canon Digital Rebel XSi camera]
 
 ::right::
 <img src="/2dtm_ribo.jpg" class="w-300px ml-20px mx-auto mt-60px" v-click/>
-<p class="cite">[Lucas, B., Himes, B. et.al. eLife 2021]</p>
+<p class="cite" v-after>[Lucas, B., Himes, B. et.al. eLife 2021]</p>
 
 
 
@@ -341,7 +346,7 @@ triplet apochromatic refractor on Canon Digital Rebel XSi camera]
 <p class="cite">Wang, G., et.al. Nature methods 2006</p>
 <p class="cite">Sykes, D., et.al. Cell 2016</p>
 
-Genetic maipulation with CRISPR can be used to introduce Ribosomopathy-like defects
+Genetic manipulation with CRISPR can be used to introduce Ribosomopathy-like defects
 <p class="cite"></p>
 ---
 layout: video
@@ -401,15 +406,21 @@ class: text-white
 
 
 ---
-clicks: 3
+clicks: 2
 ---
 
-# Why and how DeCo-LACE
+# How we acquire Cryo-EM data
 
 <img src="/classic2.png" class="h-400px mx-auto " v-after v-if="$slidev.nav.clicks<1"/>
 <img src="/classic1.png" class="h-400px mx-auto " v-if="$slidev.nav.clicks===1" />
 <img src="/classic3.png" class="h-400px mx-auto " v-if="$slidev.nav.clicks===2" />
-<img src="/decolace.png" class="h-400px mx-auto " v-if="$slidev.nav.clicks===3" />
+
+---
+
+# Defocus-Corrected Large Area Cryo-EM (DeCo-LACE)
+
+<img src="/decolace.png" class="h-400px mx-auto "  />
+
 ---
 clicks: 5
 ---
@@ -431,7 +442,7 @@ clicks: 5
 <img src="/the_lamella.png" class="h-250px mx-auto" />
 
 <img src="/focus.png" class="h-190px mx-auto mt-10px" />
-<p class="cite" >[Elferich, J., Schiroli, G., Scadden, D., Grigoriff, N. bioRxiv 2022]</p>
+<p class="cite" >[Elferich, J., Schiroli, G., Scadden, D., Grigorieff, N. bioRxiv 2022]</p>
 
 
 ---
@@ -526,21 +537,93 @@ clicks: 2
 ::right::
 
 <img src="class.png" class="mt-20px" v-if="$slidev.nav.clicks === 2"/>
-<p class="cite">[Lucas, B. et.al. eLife 2022]</p>
+<p class="cite" v-if="$slidev.nav.clicks === 2">[Lucas, B. et.al. eLife 2022]</p>
 
 ---
 
 # Future plans
 
-- Ribosomopathies
+::left::
+### Ribosomopathies
 
-- Hematopoietic stem cell mobilization
+- Introduce mutations found in DBA and SDS patients into the ER-HoxB8 system using CRISPR/Cas9
 
-- Metastasis
+- Quantify the difference in ribosome state between wild-type and mutant cells
+  - Local concentration
+  - Ribosome arrangment (membrane-bound/polysome)
+  - Ribosome composition
+
+
+
+::right::
+
+<div v-click>
+
+### Hematopoietic stem cell mobilization
+
+<img src="/traff.png" class="w-300px mx-auto mt-20px" />
+
+<p class="cite">[Mazo, I., et.al. Trends in Immunology 2011]</p>
+
+- Identify molecules that form cell-cell interactions using Fab-AuNPs
+
+- Use 2DTM to quantify changes in cytoskeleteon
+
+</div>
+
+<div v-click>
+
+### Can the same tools be used to study metastasis?
+
+</div>
 
 ---
 
-# Acknowledgments
+# Acknowledgements
+
+::left::
+<p class="pi">Eric Gouaux</p>
+<p class="sig">Sarah Clark</p>
+<p class="sig">Jingpeng Ge</p>
+<p class="sig">April Goehring</p>
+<p class="sig">Aya Matsui</p>
+<p>Gouaux lab members</p>
+<p class="pi">Peter Barr-Gillespie</p>
+<p>Jocelyn Krey</p>
+<p class="pi">Theresa Nicholson</p>
+<p class="pi">Pacific Northwest Cryo-EM Center:​</p>
+<p>Claudia Lopez​​</p>
+<p>Craig Yoshioka​​</p>
+<p class="pi">Janelia Cryo-EM core:</p>
+<p>Xiaowei Zhao</p>
+<p>Shixin Yang</p>
+<p class="pi">Other:​</p>
+<p>Lauren-Ann Metskalis​​</p>
+<p>Maia Azubel​</p>
+
+::right::
+<p class="pi">Niko Grigorieff</p>
+<p>Bronwyn Lucas</p>
+<p>Ben Himes</p>
+<p class="pi">Tim Grant</p>
+<p class="pi">David Scadden</p>
+<p>Giulia Schiroli</p>
+<p class="pi">UMass Medical School Cryo-EM core:</p>
+<p>Chen Xu</p>
+<p>Kangkang Song</p>
+
+
+<style>
+  .slidev-layout p {
+    @apply leading-5 my-0 !important;
+  }
+  p.sig {
+    @apply font-bold
+  }
+  p.pi{
+    @apply font-bold underline mt-1rem
+  }
+</style>
 
 
 ---

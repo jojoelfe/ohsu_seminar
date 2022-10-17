@@ -44,6 +44,22 @@
   h6:not(.opacity-100) {
     @apply opacity-40;
   }
+
+  ul {
+    list-style: disc;
+  }
+
+  p {
+    @apply my-1.5;
+  }
+
+  li > ul,
+  li > ol,
+  ul:first-child,
+  ol:first-child {
+    margin-top: 0;
+  }
+
 }
 
 .slidev-layout.video{
