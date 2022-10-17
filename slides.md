@@ -116,6 +116,10 @@ clicks: 4
       from.value = 0.6
       to.value = 300
       }
+      else if (val > 1) {
+      from.value = 0.6
+      to.value = 0.6
+      }
       })
 </script>
 
@@ -219,7 +223,7 @@ Id: custom
 ---
 clicks: 3
 ---
-<Video src="/movie3.mp4" class="h-full" v-if="$slidev.nav.clicks<2"></Video>
+<Video src="/movie3.mp4" class="h-full" :from="from1" :to="to1" v-if="$slidev.nav.clicks<2"></Video>
 
 <div class="flex">
 <div class="h-400px" v-if="$slidev.nav.clicks>1">
@@ -227,10 +231,45 @@ clicks: 3
 <img src="/Figure_6.png" class="h-500px ml-0px" />
 
 </div>
-<Videoi src="/Video1.mp4" class="h-250px mt-130px ml-20px" v-if="$slidev.nav.clicks>2"></Videoi>
+<Videoi src="/Video1.mp4" class="h-250px mt-130px ml-20px" autoplay loop v-if="$slidev.nav.clicks>2"></Videoi>
 </div>
 
+<script setup>
+  import { onMounted , getCurrentInstance, ref, watch } from 'vue'
+  import { inject } from 'vue'
+  import { injectionRoute } from '@slidev/client/constants'
+  // Run when slide mounted
+  const route = inject(injectionRoute)
+  const from1 = ref(-1)
+  const to1 = ref(-1)
+  const from2 = ref(-1)
+  const to2 = ref(-1)
+  onMounted(() => {
+     console.log(route)
+     console.log($slidev.nav.route)
+  })
+  // Watch for changes in $slidev.nav.clicks
+  watch(() => $slidev.nav.clicks, (val) => {
+    if (route.name !== $slidev.nav.route.name) return
+    if (val === 0) {
+      from1.value = -1
+      to1.value = -1
+      from2.value = -1
+      to2.value = -1
+    } else if (val === 1) {
+      from1.value = 0
+      to1.value = 100.0
+    } else if (val > 1) {
+      from1.value = 100.0
+      to1.value = 100.0
+    } else if (val === 3) {
+      from2.value = 0.0
+      to2.value = 100.0
+    }  
+  })
+  
 
+</script>
 
 ---
 
@@ -605,6 +644,7 @@ clicks: 2
 <p class="pi">Niko Grigorieff</p>
 <p>Bronwyn Lucas</p>
 <p>Ben Himes</p>
+<p>Grigorieff lab members</p>
 <p class="pi">Tim Grant</p>
 <p class="pi">David Scadden</p>
 <p>Giulia Schiroli</p>
@@ -631,6 +671,64 @@ layout: section
 ---
 
 # Extras
+
+
+---
+clicks: 1
+layout: video
+background: '#000000'
+
+---
+<Video src="/decotilt.mp4" class="h-full" :from="from" :to="to" loop></Video>
+
+<script setup>
+  import { onMounted , getCurrentInstance, ref, watch } from 'vue'
+  import { inject } from 'vue'
+  import { injectionRoute } from '@slidev/client/constants'
+  // Run when slide mounted
+  const route = inject(injectionRoute)
+  const from = ref(-1)
+  const to = ref(-1)
+  onMounted(() => {
+     console.log(route)
+     console.log($slidev.nav.route)
+  })
+  // Watch for changes in $slidev.nav.clicks
+  watch(() => $slidev.nav.clicks, (val) => {
+    if (route.name !== $slidev.nav.route.name) return
+    if (val === 0) {
+      from.value = -1
+      to.value = -1
+    } else if (val === 1) {
+      from.value = 0
+      to.value = 50.0
+    }
+  })
+  
+
+
+
+</script>
+
+
+---
+
+# 2DTM of microtubules
+
+::left::
+
+### At cell periphery
+
+<img src="/mitoneuro1.png" class="mx-auto w-60%"/>
+<img src="/mitoneuro2.png" class="mx-auto w-60%"/>
+
+
+::right::
+
+### In DeCo-LACE imaged lamelle
+
+<img src="/mitodeco1.png" class="mx-auto w-45%"/>
+<img src="/mitodeco2.png" class="mx-auto w-45%"/>
 
 ---
 clicks: 5
