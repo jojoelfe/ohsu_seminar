@@ -562,8 +562,12 @@ clicks: 2
 ::right::
 
 <div class="flex ml--100px mt-80px">
+<div><p class="text-center">  &lt; 40 nm </p>
 <img src="/image3.png" class="h-280px" />
+</div>
+<div><p class="text-center"> 40-60 nm </p>
 <img src="/image1.png" class="h-280px" />
+</div>
 </div>
 
 ---
