@@ -53,13 +53,13 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 
 
 
-# Hearing background
+# Hair-cells: sensory cells of balance and hearing
 
 <stereocilia-animation></stereocilia-animation>
 
 ---
 
-# Proteins of mechanotransduction
+# Proteins of mechanosensory transduction
 
 <div class="flex mt-50px ml-50px">
 <div>
@@ -150,7 +150,7 @@ p {
 
 ---
 
-# There are filaments on stereocilia
+# How to recognize Pcdh15
 
 <div class="flex">
 <img src="/isthispcdh15.png" class="w-auto h-400px mt-40px"/>
@@ -276,7 +276,12 @@ clicks: 3
 # Summary
 
 <ul>
-<li>Immuno-AuNPs enable detection of rare protein complexes in cryo-EM tomograms
+
+
+<li v-click>Tip-links might occur with more than one copy at the tip, similar to channels</li>
+<li v-click class="mb-50px">Pcdh15 has a predetermined bending point to adopt to geometry required for trafficking</li>
+
+<li v-click>Immuno-AuNPs enable detection of rare protein complexes in cryo-EM tomograms
 <ul>
 <li>Location</li>
 <li>Numbers</li>
@@ -285,9 +290,6 @@ clicks: 3
 <li>But: For now only extracellular</li>
 </ul>
 </li>
-
-<li v-click>Tip-links might occur with more than one copy at the tip, similar to channels</li>
-<li v-click>Pcdh15 has a predetermined bending point to adopt to geometry required for trafficking</li>
 </ul>
 
 ---
@@ -312,7 +314,7 @@ layout: section
 
 ---
 
-# Ribosomopathies hypotheses
+# Ribosomopathy hypotheses
 
 <img src="/hyops.jpg" class="mx-auto mt-50px" />
 <p class="cite" v-after>[Gay, D., et.al. Trends in Biochemical Sciences, 2021]</p>
@@ -559,8 +561,10 @@ clicks: 2
 
 ::right::
 
-<Videoi src="/movie5.mp4" autoplay v-if="$slidev.nav.clicks == 1"></Videoi>
-<Videoi src="/movie6.mp4" autoplay v-if="$slidev.nav.clicks == 2"></Videoi>
+<div class="flex ml--100px mt-80px">
+<img src="/image3.png" class="h-280px" />
+<img src="/image1.png" class="h-280px" />
+</div>
 
 ---
 clicks: 2
