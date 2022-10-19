@@ -59,7 +59,7 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 
 ---
 
-# Proteins of mechanosensory transduction
+# Proteins involved in mechanosensory transduction
 
 <div class="flex mt-50px ml-50px">
 <div>
@@ -296,7 +296,7 @@ clicks: 3
 layout: section
 ---
 
-# Quantitative Cryo-EM using 2D template matching
+# Quantitative and high-throughput cryo-EM using 2D template matching
 
 A new tool for the study of ribosomopathies and the hematopoietic system
 
@@ -386,11 +386,11 @@ triplet apochromatic refractor on Canon Digital Rebel XSi camera]
 <img src="/erhox.png" class="mx-auto h-150px" />
 </div>
 
-<p class="cite">Wang, G., et.al. Nature methods 2006</p>
-<p class="cite">Sykes, D., et.al. Cell 2016</p>
+<p class="cite">[Wang, G., et.al. Nature methods 2006]</p>
+<p class="cite">[Sykes, D., et.al. Cell 2016]</p>
 
 Genetic manipulation with CRISPR can be used to introduce Ribosomopathy-like defects
-<p class="cite"></p>
+<p class="cite">[Ceglie, I. et.al. Journal of Leukocyte Biology 2016]</p>
 ---
 layout: video
 background: '#000000'
