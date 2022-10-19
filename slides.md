@@ -294,7 +294,9 @@ clicks: 3
 layout: section
 ---
 
-# Big transition
+# Quantitative Cryo-EM using 2D template matching
+
+A new tool for the study of ribosomopathies and the hematopoietic system
 
 ---
 
@@ -455,10 +457,18 @@ clicks: 2
 <img src="/classic3.png" class="h-400px mx-auto " v-if="$slidev.nav.clicks===2" />
 
 ---
+clicks: 6
+---
 
 # Defocus-Corrected Large Area Cryo-EM (DeCo-LACE)
 
-<img src="/decolace.png" class="h-400px mx-auto "  />
+<img src="/deco1.png" class="h-400px mx-auto "  v-if="$slidev.nav.clicks<1" />
+<img src="/deco2.png" class="h-400px mx-auto "  v-if="$slidev.nav.clicks===1" />
+<img src="/deco3.png" class="h-400px mx-auto "  v-if="$slidev.nav.clicks===2" />
+<img src="/deco4.png" class="h-400px mx-auto "  v-if="$slidev.nav.clicks===3" />
+<img src="/deco5.png" class="h-400px mx-auto "  v-if="$slidev.nav.clicks===4" />
+<img src="/deco6.png" class="h-400px mx-auto "  v-if="$slidev.nav.clicks===5" />
+<img src="/decofinal.png" class="h-400px mx-auto "  v-if="$slidev.nav.clicks===6" />
 
 ---
 clicks: 5
