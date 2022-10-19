@@ -60,9 +60,10 @@ export default {
       rc: false,
       stereocilia: [],
       probePos: {
-        cx: 100,
-        cy: 100,
-        r: 50
+        cx: 500,
+        cy: 400,
+        r: 50,
+        display: false
       },
       angle: 0,
       direction: 1,
@@ -143,6 +144,7 @@ export default {
           };
       const elem = this.svg;
       const point = elem.createSVGPoint();
+      
       const transform = elem.getScreenCTM().inverse();
       const circlePos = this.probePos;
       const getPos = touch ? getTouchPos : this.getMousePos;
@@ -155,6 +157,8 @@ export default {
 
         // Map the screen pixels back to svg coords
         newPt = point.matrixTransform(transform);
+        console.log(newPt);
+
         circlePos.cx = newPt.x + 960;
         circlePos.cy = newPt.y + 540;
       };
@@ -173,7 +177,6 @@ export default {
     getMousePos(mouseEvent, point) {
       point.x = mouseEvent.clientX;
       point.y = mouseEvent.clientY;
-      
     },
     getStereociliaPath(x, length, low = 1, zoom = [1, [70, 500]]) {
       var that = this;
@@ -269,6 +272,10 @@ export default {
         })
         .style("fill", function(d) {
           return "black";
+        })
+        .style("display", function(d) {
+          return "block";
+          
         });
       var inters = 0;
       that.bundlePath.forEach(function(data, index) {
@@ -340,6 +347,9 @@ export default {
         })
         .style("fill", function(d) {
           return "black";
+        })
+        .style("display", function(d) {
+          return "none";
         });
 
       that.bundlePath.forEach(function(data, index) {
