@@ -593,7 +593,7 @@ clicks: 2
 <Videoi src="/rec2.mp4" v-if="$slidev.nav.clicks === 2"></Videoi>
 ::right::
 
-<img src="class.png" class="mt-20px" v-if="$slidev.nav.clicks === 2"/>
+<img src="/class.png" class="mt-20px" v-if="$slidev.nav.clicks === 2"/>
 <p class="cite" v-if="$slidev.nav.clicks === 2">[Lucas, B. et.al. eLife 2022]</p>
 
 ---
