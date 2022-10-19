@@ -1,8 +1,8 @@
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   build:
@@ -24,7 +24,7 @@ jobs:
           yarn install
       - name: Build application
         run: |
-          yarn build --base /pcdh15_tomo_talk/
+          yarn build --base /ohsu_seminar/
           cp dist/index.html dist/404.html
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2.3.0
