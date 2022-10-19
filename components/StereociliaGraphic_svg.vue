@@ -157,8 +157,8 @@ export default {
 
         // Map the screen pixels back to svg coords
         newPt = point.matrixTransform(transform);
-        circlePos.cx = newPt.x;// + 960;
-        circlePos.cy = newPt.y;// + 540;
+        circlePos.cx = newPt.x/2 + 960;
+        circlePos.cy = newPt.y/2 + 540;
       };
       const moveFn = evt => getPos(evt, point);
      
