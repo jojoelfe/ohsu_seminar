@@ -31,7 +31,7 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 
 # Expectation
 
-![Goodsell](goodsell.jpg)
+![Goodsell](/goodsell.jpg)
 
 <p style="text-align: center">Illustration by David S. Goodsell</p>
 
@@ -40,7 +40,7 @@ From the rare mechanosensory transduction complex to the abundant ribosome
 
 # Reality
 
-![Real EM](trueem.png)
+![Real EM](/trueem.png)
 
 - High energy electrons rapidly damage biological samples and biomolecules have very little contrast 
 
