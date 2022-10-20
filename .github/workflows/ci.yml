@@ -21,10 +21,10 @@ jobs:
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
       - name: Install dependencies
         run: |
-          pnpm install
+          npm install
       - name: Build application
         run: |
-          pnpm build --base /ohsu_seminar/
+          npm build --base /ohsu_seminar/
           cp disst/index.html dist/404.html
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2.3.0
