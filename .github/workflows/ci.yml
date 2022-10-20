@@ -22,6 +22,8 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
+      - name: Install slidev
+        run:  npm i -g @slidev/cli
       - name: Build application
         run: |
           slidev build --base /ohsu_seminar/
