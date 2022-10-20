@@ -64,6 +64,6 @@ export default {
 
 <template>
 <video ref="video" muted :autoplay="autoplay" :loop="loop" id="myVideo" class="" >
-  <source :src="/ohsu_seminar/${{src}}" >
+  <source :src="'/ohsu_seminar'+src" >
 </video>
 </template>
