@@ -27,7 +27,7 @@ jobs:
       - name: Build application
         run: |
           slidev build --base /ohsu_seminar/
-          cp disst/index.html dist/404.html
+          cp dist/index.html dist/404.html
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2.3.0
         with:
